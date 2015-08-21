@@ -6,13 +6,61 @@ public class TurtleWorld
     {
         World turtleWorld = new World();
         Turtle turtle = new Turtle(turtleWorld);
-        turtle.setPenColor(Color.ORANGE);
+        turtle.setPenColor(Color.BLUE);
         turtle.penDown();
-        turtle.turn(60);
-        turtle.forward(50);
-        turtle.turn(60);
-        turtle.forward(87);
-        turtle.turn(150);
-       turtle.forward(100);
+        int degree=0;
+        while (degree<=15) {
+            turtle.forward(100);
+            turtle.turn(180);
+            turtle.forward(200);
+            turtle.turn(180);
+            turtle.forward(100);
+            turtle.turn(degree);
+            degree +=1;
     }
+    turtle.setPenColor(Color.YELLOW);
+    degree=0;
+         while (degree<=15) {
+            turtle.forward(100);
+            turtle.turn(180);
+            turtle.forward(200);
+            turtle.turn(180);
+            turtle.forward(100);
+            turtle.turn(degree);
+            degree +=1;
+    }
+    turtle.setPenColor(Color.GREEN);
+    degree=0;
+         while (degree<=15) {
+            turtle.forward(100);
+            turtle.turn(180);
+            turtle.forward(200);
+            turtle.turn(180);
+            turtle.forward(100);
+            turtle.turn(degree);
+            degree +=1;
+    }
+    turtle.setPenColor(Color.ORANGE);
+    degree=0;
+         while (degree<=15) {
+            turtle.forward(100);
+            turtle.turn(180);
+            turtle.forward(200);
+            turtle.turn(180);
+            turtle.forward(100);
+            turtle.turn(degree);
+            degree +=1;
+    }
+    turtle.setPenColor(Color.RED);
+    degree=0;
+         while (degree<=15) {
+            turtle.forward(100);
+            turtle.turn(180);
+            turtle.forward(200);
+            turtle.turn(180);
+            turtle.forward(100);
+            turtle.turn(degree);
+            degree +=1;
+    }
+}
 }
