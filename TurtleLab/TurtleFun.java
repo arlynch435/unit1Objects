@@ -39,28 +39,24 @@ public class TurtleFun
           distance=distance-1;
         }
        omega.turn(360-45);
-       blu.turn(180);
-       omega.turn(180);
        blu.penUp();
+       blu.setPenColor(Color.MAGENTA);
+       omega.setPenColor(Color.MAGENTA);
        omega.penUp();
-       blu.forward(200);
-       omega.forward(300);
-       blu.turn(90);
        omega.turn(90);
-       blu.turn(45);
+       blu.forward(80);
+       omega.forward(175);
+       blu.turn(90);
+       blu.forward(155);
        blu.penDown();
        omega.penDown();
-      Random generator= new Random();
-      int  thingie=generator.nextInt(360);
-      System.out.println(thingie); // remember 105,
       int stuff=0;
       while (stuff<100)     {
-          blu.turn(thingie);
-          omega.turn(0-thingie);
-          // thingie=generator.nextInt(100);
-          blu.forward(50);
-          omega.forward(50);
+          blu.turn(225);
+          omega.turn(0-225);
+          blu.forward(100);
+          omega.forward(100);
           stuff+=1;
-        }
+        } 
     }
 }
